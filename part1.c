@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 
     int pagetable[32] = {2, 4, 1, 7, 3, 5, 6};
 
-    while (fread(&virtual_addr, sizeof(unsigned long), 1, input))
+    while(fread(&virtual_addr, sizeof(unsigned long), 1, input))
     {
         page_num = virtual_addr >> OFFSET_BITS;
 
