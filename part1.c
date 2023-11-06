@@ -77,7 +77,6 @@ int main(int argc, char *argv[])
             fclose(output);
             return 1;
         }
-        printf("Virtual Address: 0x%lu -> physical address 0x%lu", virtual_addr, physical_addr);
     }
     fclose(input);
     fclose(output);
